@@ -8,6 +8,7 @@ int 0x10
 inc bh
 inc bl
 cmp bh, 90
+je exit
 and bl, 1
 je lowercase
 
@@ -17,7 +18,6 @@ mov al, bl
 int 0x10
 inc bh
 inc bl
-je exit
 and bl, 1
 jne uppercase
 
